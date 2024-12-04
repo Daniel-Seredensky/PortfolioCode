@@ -91,7 +91,7 @@ body {
 
 /* Headings within left-side */
 .left-side h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 10px; /* Adjusted as needed */
   margin-bottom: 25px; /* Increased margin-bottom for more space */
   color: #F5E5DC;
@@ -113,13 +113,13 @@ body {
 
 @media (min-width: 1024px) {
   .left-side h3 {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
 
 /* Paragraphs within left-side */
 .left-side p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.6;
   text-align: center;
   max-width: 80%; /* Reduced max-width for better centering */
@@ -130,7 +130,7 @@ body {
 
 @media (min-width: 1024px) {
   .left-side p {
-    font-size: .6rem;
+    font-size: 1rem;
   }
 }
 
