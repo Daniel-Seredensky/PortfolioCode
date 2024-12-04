@@ -96,7 +96,7 @@ function LandingPage({ onExploreClick }) {
       content: {
         type: 'link',
         text: "Click here see the code on GitHub",
-        href: "https://github.com/Daniel-Seredensky/WebBackup",
+        href: "https://github.com/Daniel-Seredensky/PortfolioCode",
       },
     },
   ];
