@@ -1,0 +1,397 @@
+/* LandingPage.css */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bdad9d;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #6B4226; /* Changed to match journey button */
+  color: #F5E5DC;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.header .name-title {
+  color: #F5E5DC;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow */
+}
+
+.header .job-subtitle {
+  color: #F5F5F1;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow */
+}
+
+/* Container */
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+
+@media (min-width: 1024px) {
+  .landing-page-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Left Side */
+.left-side {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  position: relative;
+  border: double 8px #045728; /* Increased border thickness */
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh; /* Adjust as needed */
+}
+
+@media (max-height: 275px) {
+  .left-side {
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .left-side {
+    width: 50%;
+  }
+}
+
+/* About Me Box */
+.about-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* Headings within left-side */
+.left-side h3 {
+  font-size: 1.5rem;
+  margin-top: 10px; /* Adjusted as needed */
+  margin-bottom: 25px; /* Increased margin-bottom for more space */
+  color: #F5E5DC;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow */
+}
+
+/* Added thin dark green line under the heading */
+.left-side h3::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #045728; /* Dark green */
+  margin: 10px auto 0;
+}
+
+@media (min-width: 1024px) {
+  .left-side h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Paragraphs within left-side */
+.left-side p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 80%; /* Reduced max-width for better centering */
+  margin: 25px auto; /* Increased margin-top and margin-bottom */
+  color: #F5F5F1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow */
+}
+
+@media (min-width: 1024px) {
+  .left-side p {
+    font-size: 1rem;
+  }
+}
+
+/* Journey Button */
+.journey-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #6B4226; /* Same color as header */
+  color: #F5F5F1;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 30px; /* Adjusted as needed */
+}
+
+@media (min-width: 1024px) {
+  .journey-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+  }
+}
+
+.journey-button:hover {
+  background-color: #8B5A2B;
+  transform: translateY(-3px);
+}
+
+/* Right Side */
+.right-side {
+  width: 100%;
+  max-width: 800px;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 70vh; /* Adjust as needed */
+}
+
+@media (min-width: 1024px) {
+  .right-side {
+    width: 50%;
+    padding: 20px;
+  }
+}
+
+/* Sections within right-side */
+.right-side .research-section,
+.right-side .projects-section {
+  margin-bottom: 40px; /* Increased from 20px to 40px for more padding */
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .right-side .research-section,
+  .right-side .projects-section {
+    margin-bottom: 40px;
+  }
+}
+
+/* Headings within right-side */
+.right-side h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 25px; /* Increased margin-bottom for more space */
+  color: #F5E5DC;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow */
+}
+
+/* Added thin dark green line under the heading */
+.right-side h3::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #045728; /* Dark green */
+  margin: 10px auto 0;
+}
+
+@media (min-width: 1024px) {
+  .right-side h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Project Card Styles */
+.project-card {
+  background-color: #6B4226;
+  color: #F5E5F1; /* Adjusted for better contrast */
+  padding: 20px;
+  margin-bottom: 40px; /* Increased from 20px to 40px for more padding between cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  cursor: pointer;
+  /* Removed CSS transitions related to hover as Framer Motion handles them */
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.5rem;
+  color: #F5E5DC;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Tech Tags */
+.project-techs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-tag {
+  background-color: #696969;
+  color: #F5F5F1;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* Project Details */
+.project-details {
+  margin-top: 15px;
+  /* Removed opacity and max-height as Framer Motion handles it */
+}
+
+/* Project Description */
+.project-description {
+  font-size: 1rem;
+  color: #F5F5F1;
+}
+
+/* Project Content */
+.project-content {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+/* Scale down images and GIFs by factor of 3 */
+.project-image,
+.project-gif {
+  width: 33.333%; /* Reduced from 100% to 33.333% */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: block; /* Ensure block-level for centering */
+  margin-left: auto;
+  margin-right: auto; /* Center horizontally */
+}
+
+.project-content p,
+.project-content a {
+  font-size: 1rem;
+  color: #1b89ff;
+  text-decoration: none;
+}
+
+.project-content a:hover {
+  text-decoration: underline;
+}
+
+/* Gallery Styles */
+.project-gallery {
+  display: flex;
+  flex-direction: row; /* Changed from column to row */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 15px;
+  justify-content: center; /* Center images horizontally */
+}
+
+.project-gallery img {
+  width: 30%; /* Adjusted for better spacing in horizontal layout */
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  /* Responsive adjustments for smaller screens */
+
+  .project-gallery img {
+    width: 45%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Filigree SVG positioning for each corner */
+.top-left-filigree,
+.top-right-filigree,
+.bottom-left-filigree,
+.bottom-right-filigree {
+  position: absolute;
+  width: 26px; /* Scaled up by factor of 1.75 */
+  height: 26px;
+  z-index: 2; /* Ensure filigree is above the shadow */
+}
+
+@media (min-width: 1024px) {
+  .top-left-filigree,
+  .top-right-filigree,
+  .bottom-left-filigree,
+  .bottom-right-filigree {
+    width: 35px; /* Scaled up by factor of 1.75 */
+    height: 35px;
+  }
+}
+
+.top-left-filigree {
+  top: -5px;
+  left: -5px;
+  transform: rotate(180deg);
+}
+
+.top-right-filigree {
+  top: -5px;
+  right: -5px;
+  transform: rotate(270deg);
+}
+
+.bottom-left-filigree {
+  bottom: -5px;
+  left: -5px;
+  transform: rotate(90deg);
+}
+
+.bottom-right-filigree {
+  bottom: -5px;
+  right: -5px;
+}
+
+/* Scrollbar */
+.right-side::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right-side::-webkit-scrollbar-thumb {
+  background-color: #6B4226;
+  border-radius: 10px;
+}
+
+.right-side::-webkit-scrollbar-track {
+  background-color: #bdad9d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .header .name-title {
+    font-size: 1.5rem;
+  }
+
+  .header .job-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .journey-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
