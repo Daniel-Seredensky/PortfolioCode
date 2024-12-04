@@ -3,6 +3,7 @@ import './LandingPage.css';
 import { motion } from 'framer-motion';
 import ProjectShowcase from './ProjectShowcase'; // Import the ProjectShowcase component
 
+
 function LandingPage({ onExploreClick }) {
   const researchProjects = [
     {
