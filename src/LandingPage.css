@@ -261,70 +261,70 @@ body {
 /* Project Details */
 .project-details {
   margin-top: 15px;
-  /* Removed opacity and max-height as Framer Motion handles it */
 }
 
-/* Project Description */
 .project-description {
   font-size: 1rem;
   color: #F5F5F1;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Project Content */
 .project-content {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
 }
 
-/* Scale down images and GIFs by factor of 3 */
 .project-image,
 .project-gif {
-  width: 33.333%; /* Reduced from 100% to 33.333% */
+  width: 33.333%;
   height: auto;
   border-radius: 10px;
   margin-top: 15px;
-  display: block; /* Ensure block-level for centering */
+  display: block;
   margin-left: auto;
-  margin-right: auto; /* Center horizontally */
+  margin-right: auto;
 }
 
-.project-content p,
+/* Unified link styling */
 .project-content a {
+  display: block;
+  margin-top: 10px;
   font-size: 1rem;
   color: #1b89ff;
   text-decoration: none;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Added text shadow */
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
 }
 
 .project-content a:hover {
+  color: #5cacff;
   text-decoration: underline;
 }
 
-/* Gallery Styles */
 .project-gallery {
   display: flex;
-  flex-direction: row; /* Changed from column to row */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 15px;
-  justify-content: center; /* Center images horizontally */
+  justify-content: center;
+  width: 100%;
 }
 
 .project-gallery img {
-  width: 30%; /* Adjusted for better spacing in horizontal layout */
+  width: 30%;
   height: auto;
   border-radius: 10px;
 }
 
 @media (max-width: 600px) {
-  /* Responsive adjustments for smaller screens */
-
   .project-gallery img {
-    width: 45%; /* Adjust width for smaller screens */
+    width: 45%;
   }
 }
+
 
 /* Filigree SVG positioning for each corner */
 .top-left-filigree,

@@ -2,7 +2,6 @@ import React from 'react';
 import './LandingPage.css';
 import { delay, motion } from 'framer-motion';
 
-// Define variants for the project card
 const cardVariants = {
     rest: {
       scale: 1,
@@ -25,9 +24,7 @@ const cardVariants = {
       },
     },
 };
-  
-  
-// Define variants for the project details
+
 const detailsVariants = {
   rest: {
     opacity: 0,
@@ -47,7 +44,6 @@ const detailsVariants = {
   },
 };
 
-// ProjectShowcase Component
 const ProjectShowcase = ({ projects }) => {
   return (
     <div className="space-y-15">
@@ -59,9 +55,7 @@ const ProjectShowcase = ({ projects }) => {
           initial="rest"
           whileHover="hover"
         >
-          {/* Title */}
           <h4 className="project-title">{project.title}</h4>
-          {/* Tech Tags */}
           <div className="project-techs">
             {project.tech.map((tech) => (
               <span key={tech} className="tech-tag">
@@ -69,18 +63,25 @@ const ProjectShowcase = ({ projects }) => {
               </span>
             ))}
           </div>
-          {/* Project Details: Description and Content */}
           <motion.div className="project-details" variants={detailsVariants}>
             <p className="project-description">{project.description}</p>
-            {/* Render content if it exists */}
             {project.content && (
               <div className="project-content">
-                {/* Handle different content types */}
                 {project.content.type === 'image' && (
-                  <img src={project.content.src} alt={project.title} className="project-image" />
+                  <div>
+                    <img src={project.content.src} alt={project.title} className="project-image" />
+                    <a href={project.content.href} target="_blank" rel="noopener noreferrer">
+                      {project.content.text}
+                    </a>
+                  </div>
                 )}
                 {project.content.type === 'gif' && (
-                  <img src={project.content.src} alt={project.title} className="project-gif" />
+                  <div>
+                    <img src={project.content.src} alt={project.title} className="project-gif" />
+                    <a href={project.content.href} target="_blank" rel="noopener noreferrer">
+                      {project.content.text}
+                    </a>
+                  </div>
                 )}
                 {project.content.type === 'text' && <p>{project.content.text}</p>}
                 {project.content.type === 'link' && (
@@ -93,6 +94,9 @@ const ProjectShowcase = ({ projects }) => {
                     {project.content.images.map((src, idx) => (
                       <img key={idx} src={src} alt={`${project.title} ${idx + 1}`} />
                     ))}
+                    <a href={project.content.href} target="_blank" rel="noopener noreferrer">
+                      {project.content.text}
+                    </a>
                   </div>
                 )}
               </div>

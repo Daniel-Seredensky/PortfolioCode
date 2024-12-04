@@ -9,13 +9,13 @@ function LandingPage({ onExploreClick }) {
       title: "Mathematic Modeling Of The Spread Of Infectious Diseases",
       description:
         "Developed systems of ODEs to model the spread of Covid-19, Marburg, and Crimean Congo Hemorrhagic Fever. Then conducted stability and sensitivity analysis to determine the most effective strategies to combat the spread of these diseases. Gained experience using Python to visualize the results of the analysis.",
-      tech: ["Python", "Statistical Modeling"],
+      tech: ["Python", "Statistical Modeling","Started 11/2023"],
     },
     {
       title: "ECOLE",
       description:
         "Supporting and utilizing systems for the evaluation of our research on the Environmental-driven Conceptual Learning (ECOLE) program funded by Defense Advanced Research Projects Agency (DARPA). This project is part of a team of researchers from GE Aerospace, LCC, USC and UCLA.",
-      tech: ["Java", "Natural Language Processing"],
+      tech: ["Java", "Natural Language Processing", "Started 10/2024"],
     },
   ];
 
@@ -24,27 +24,31 @@ function LandingPage({ onExploreClick }) {
       title: "Monte Carlo Simulation",
       description:
         "Simulating electron orbits of a hydrogen atom at different quantum numbers and plotting the results.",
-      tech: ["Physics"],
-      content: { type: 'image', src: '/projectContent/Atom.png' },
+      tech: ["Physics","Finished 09/2024"],
+      content: { type: 'image', src: '/projectContent/Atom.png', text: "Click here see the code on GitHub",href: "https://github.com/Daniel-Seredensky/Hydrogen" },
     },
     {
       title: "Sinusoidal Function Approximator",
       description:
         "Visualizes the fundamental machine learning concept of gradient descent by approximating a sinusoidal function using a basic neural network.",
-      tech: ["Neural Networks", "Matplotlib"],
-      content: { type: 'gif', src: '/projectContent/MainLearn.gif' },
+      tech: ["Neural Networks", "Matplotlib","Finished 07/2024"],
+      content: { type: 'gif', src: '/projectContent/MainLearn.gif',text: "Click here see the code on GitHub",href: "https://github.com/Daniel-Seredensky/RegressionVisualization"},
     },
     {
       title: "Terrain Generator",
       description:
         "An interactive random terrain generator created by only using parametric sin and cos functions. Then converting it into a Mesh using Delaunay triangulation to make the terrain usable in Blender. Click on the button in the About Me section to get an interactive look at a terrain",
-      tech: ["Blender", "Scipy", "Applied Mathematics"],
+      tech: ["Blender", "Scipy", "Applied Mathematics", "Finished 11/2024"],
+      content: { type: 'link', 
+                text: "Click here see the code on GitHub", 
+                href: "https://github.com/Daniel-Seredensky/TerrainGenerator" 
+              },
     },
     {
       title: "Machine Learning Models",
       description:
         "Machine Learning algorithms using high-level libraries such as TensorFlow and SciPy.",
-      tech: ["TensorFlow", "Machine Learning"],
+      tech: ["TensorFlow", "Machine Learning","Finished 10/2024"],
       content: {
         type: 'link',
         text: "Click here see the code on GitHub",
@@ -55,7 +59,7 @@ function LandingPage({ onExploreClick }) {
       title: "Classification Neural Network using NumPy",
       description:
         "Classification Neural Network using no high-level libraries, demonstrating my understanding of fundamental machine learning concepts.",
-      tech: ["Machine Learning"],
+      tech: ["Machine Learning","Finished 07/2024"],
       content: {
         type: 'link',
         text: "Click here see the code on GitHub",
@@ -66,7 +70,7 @@ function LandingPage({ onExploreClick }) {
       title: "Jewel Necklace Problem Visualization",
       description:
         "If you're curious about what this problem is check out 3Blue1Brown's video on the topic.",
-      tech: ["Python", "Data Visualization"],
+      tech: ["Python", "Data Visualization", "Finished 06/2024"],
       content: {
         type: 'gallery',
         images: [
@@ -74,23 +78,25 @@ function LandingPage({ onExploreClick }) {
           '/projectContent/necklaceAnswer.png',
           '/projectContent/collapse4D.gif',
         ],
+        text: "Click here see the code on GitHub",
+        href: "https://github.com/Daniel-Seredensky/JewelNecklaceVisualization"
       },
     },
     {
       title: "CoRecover",
       description:
         "Aided in the development of an iOS application to help co-dependent individuals by sending them positive affirmations throughout the day.",
-      tech: ["Swift"],
+      tech: ["Swift","Started 10/2024"],
       content: { type: 'text', text: "Coming to the App Store soon!" },
     },
     {
       title: "Personal Website",
       description: "This website!",
-      tech: ["React", "JavaScript", "CSS", "Three.js", "Blender"],
+      tech: ["React", "JS/JSX", "CSS", "Three.js", "Vite","node.js","Git","Finished 12/2024"],
       content: {
         type: 'link',
         text: "Click here see the code on GitHub",
-        href: "https://github.com/Daniel-Seredensky/PortfolioWebsite",
+        href: "https://github.com/Daniel-Seredensky/WebBackup",
       },
     },
   ];
